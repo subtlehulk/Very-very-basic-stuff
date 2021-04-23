@@ -21,7 +21,7 @@ namespace csharp
                 Console.WriteLine("Thank you");
             } 
             else
-                Console.WriteLine("Don't like to me");
+                Console.WriteLine("Don't lie to me");
             
 
             //Using a while loop to verifiy someone's name
@@ -43,7 +43,7 @@ namespace csharp
             string nameThree = "";
             
 
-            for (int i=1;i<=3; i++) {
+            for (int i=2;i<=3; i++) {
                 Console.WriteLine("What is your name?");
 
             }
@@ -93,7 +93,7 @@ namespace csharp
             else {
                 newDeck.typeOfDeck = "Priest";
             }
-            
+
 
             Console.WriteLine("Please name your deck.");
             newDeck.nameOfDeck = Console.ReadLine();
@@ -133,7 +133,7 @@ namespace csharp
             
             Console.WriteLine("Is this information correct?");
             var correct = Console.ReadLine();
-            if (correct != "yes" && correct != "Yes")
+            if (correct != "yes" && correct != "Yes" && correct != "y")
             {
                 Console.WriteLine("Who hurt you?");
                 Console.WriteLine("Why do you do this to me?");
