@@ -78,10 +78,21 @@ namespace csharp
             Console.WriteLine(DateTime.Now);
             */
 
-            var newDeck = new Druid();
-            
-            // newDeck.numberOfCards = 30;
-            //newDeck.typeOfDeck = "Aggro";
+            Console.WriteLine("Hello there, Player! What class would you like to be?");
+            var userInput = Console.ReadLine();
+            var newDeck = new Deck();
+
+            if (userInput == "1")
+            {
+              newDeck.typeOfDeck = "Druid";
+            }
+            else if (userInput == "2")
+            {
+                newDeck.typeOfDeck = "Knight";
+            }
+            else {
+                newDeck.typeOfDeck = "Priest";
+            }
 
             Console.WriteLine("Please name your deck.");
             newDeck.nameOfDeck = Console.ReadLine();
@@ -112,12 +123,13 @@ namespace csharp
                 newDeck.numberOfCards = 30;
             }
 
-            Console.WriteLine("What type of deck are you wanting to play?");
-            newDeck.typeOfDeck = Console.ReadLine();
-
+            /*Console.WriteLine("What type of deck are you wanting to play?");
+            newDeck.typeOfDeck = Console.ReadLine(); */
+            
+            Console.WriteLine($"And the type of deck you're going to be playing is {newDeck.typeOfDeck}.");
             Console.WriteLine($"The name of your new deck is {newDeck.nameOfDeck}.");
             Console.WriteLine($"You will start off with {newDeck.numberOfCards} cards.");
-            Console.WriteLine($"And the style/type of deck you're going to be playing is {newDeck.typeOfDeck}.");
+            
             Console.WriteLine("Is this information correct?");
             var correct = Console.ReadLine();
             if (correct != "yes" && correct != "Yes")
