@@ -93,6 +93,7 @@ namespace csharp
             else {
                 newDeck.typeOfDeck = "Priest";
             }
+            
 
             Console.WriteLine("Please name your deck.");
             newDeck.nameOfDeck = Console.ReadLine();
