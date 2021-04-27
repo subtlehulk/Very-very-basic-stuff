@@ -5,10 +5,7 @@ namespace csharp
     class Program
     {
         static void Main(string[] args)  //This is a method called "Main" and it is called when the program starts so everything must be in here that we wish to be ran when executed
-        {
-
-
-
+        {        
             /*
             Console.WriteLine("Hello there, Player! What class would you like to be?");
             var userInput = Console.ReadLine();

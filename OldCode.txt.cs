@@ -125,4 +125,22 @@
             return answer;
         }
 
+            //Messing about with Arrays and for loops to add stuff to the arrays. This could be adding card objects to a deck.
+            //declare the empty array
+            string[] names = new string[3];
+
+            //run through a FOR loop to have the user enter the names in the array and fill it up
+            Console.WriteLine("Enter a name, yo.");
+            for (int i=0; i < names.Length; i++)
+            {
+                names[i] = Console.ReadLine();
+                Console.WriteLine("Another one.");
+            } 
+            
+            //Run through the array and print each cell to the user.
+            Console.WriteLine("Here's your names, aight?");
+            for (int i=0; i < names.Length; i++)
+            {
+                Console.WriteLine(names[i]);
+            } 
 */
