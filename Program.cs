@@ -7,6 +7,9 @@ namespace csharp
         static void Main(string[] args)  //This is a method called "Main" and it is called when the program starts so everything must be in here that we wish to be ran when executed
         {
 
+
+
+            /*
             Console.WriteLine("Hello there, Player! What class would you like to be?");
             var userInput = Console.ReadLine();
             var newDeck = new Deck();
@@ -57,7 +60,7 @@ namespace csharp
             }
 
             /*Console.WriteLine("What type of deck are you wanting to play?");
-            newDeck.typeOfDeck = Console.ReadLine(); */
+            newDeck.typeOfDeck = Console.ReadLine(); 
             
             Console.WriteLine($"And the type of deck you're going to be playing is {newDeck.typeOfDeck}.");
             Console.WriteLine($"The name of your new deck is {newDeck.nameOfDeck}.");
@@ -73,7 +76,7 @@ namespace csharp
             }
 
             Console.WriteLine("Thanks. Have a good one.");
-
+            */
         }
     }
 }
