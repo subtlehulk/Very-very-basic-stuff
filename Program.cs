@@ -5,7 +5,19 @@ namespace csharp
     class Program
     {
         static void Main(string[] args)  //This is a method called "Main" and it is called when the program starts so everything must be in here that we wish to be ran when executed
-        {        
+        {     
+            
+            //Here I will create a new object of type Deck
+            //and I will create a new string array which will invoke the local CreateDeck() method
+            //and it will fill the local array with strings defined in the method.
+            //The for loop will then print each cell to the console.
+            Deck newDeck = new Deck();
+            string[] cards = CreateDeck();
+            for (int i=0;i<cards.Length;i++)
+            {
+                Console.WriteLine(cards[1]);
+            }
+
             /*
             Console.WriteLine("Hello there, Player! What class would you like to be?");
             var userInput = Console.ReadLine();
@@ -75,5 +87,15 @@ namespace csharp
             Console.WriteLine("Thanks. Have a good one.");
             */
         }
+        public static string[] CreateDeck()
+        {
+            string[] cards = new string[20];
+            for (int i=0; i < cards.Length; i++)
+            {
+                cards[i] = "Hello";
+            }
+            return cards;
+        }
+
     }
 }
