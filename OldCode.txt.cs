@@ -172,4 +172,54 @@
 
 
         }
-*/
+
+
+        //Old verification code from main program. 
+         /*
+            Console.WriteLine("Please name your deck.");
+            newDeck.nameOfDeck = Console.ReadLine();
+            Console.WriteLine("Thank you. Now how many cards would you like to start off with? Please choose below");
+            Console.WriteLine("1 = 20, 2 = 25, 3 = 30");
+            var numOfcards = Console.ReadLine();
+           while (numOfcards != "1" && numOfcards != "2" && numOfcards != "3")
+            {
+                Console.WriteLine("Please select one of the options.");
+                var input = Console.ReadLine();
+                Console.WriteLine("How many cards would you like to start off with? Please choose below");
+                Console.WriteLine("1 = 20, 2 = 25, 3 = 30");
+                if (input == "1" || input == "2" || input == "3") 
+                {
+                    break;
+                }
+            }
+            if (numOfcards == "1")
+            {
+                newDeck.numberOfCards = 20;
+            }
+            else if (numOfcards == "2") 
+            {
+                newDeck.numberOfCards = 25;
+            }
+            else
+            {
+                newDeck.numberOfCards = 30;
+            }
+            */
+
+            //I was messing about with inheritence but figured for now I do not need to use it in my simple program
+            //Though I will eventually use inheritence so I can add properties to the various classes of decks.
+            /*
+            class Druid : Deck 
+            {
+                
+            }
+
+            public class Knight : Deck {
+                
+            }
+
+            public class Priest : Deck {
+                public int numberOfSpells = 15;
+                
+            }
+            */ 
